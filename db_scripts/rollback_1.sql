@@ -2,7 +2,7 @@
 
 -- delete band
 Drop table if exists band;
-
+--
 Alter table  musician Drop column bandName;
 Alter table musician Drop Column role;
 
