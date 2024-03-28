@@ -1,12 +1,12 @@
-
-
+--creation de la table band
 CREATE TABLE IF NOT EXISTS band (     bandName varchar(50),
                                         creation YEAR,
                                         genre varchar(50),
                                         PRIMARY KEY(bandName));
-
+--insertion des info dans la table band
 INSERT INTO band VALUES ("Crazy Duo", 2015, "rock"), ("Luna",2009,"classical"), ("Mysterio", 2019, "pop");
 
+--modification des tables existantes
 ALTER TABLE singer RENAME TO musician;
 Alter Table musician Rename Column singerName to musicianName;
 alter table musician add column role VARCHAR(50), add column bandName Varchar(50) ;
